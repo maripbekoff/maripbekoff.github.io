@@ -29,10 +29,14 @@ body, html {
 
 .middle {
 	position: absolute;
+	border: 1px solid white;
+	padding-left: 5%;
+	padding-right: 5%;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
+	background-color: rgba(255,255,255, 0,01);
 }
 
 hr {
@@ -45,4 +49,13 @@ hr {
 	background-size: cover;
 	height: 100px;
 	width: 100px;
+}
+
+.middle:hover {
+	background-color: rgba(255,255,255, 0.05);
+}
+
+a {
+	color: white;
+	text-decoration: none;
 }
