@@ -1,0 +1,85 @@
+/* Styles for all site */
+body, html {
+	height: 100%;
+	margin: 0;
+	font-family: sans-serif, Arial, Roman;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* Adds a black background */
+.topnav {
+	background-color: #303030;
+	overflow: hidden;
+	max-height: 45px;
+	position: relative;
+}
+
+/* Style for links in the top navigation */
+.topnav a {
+	float: left;
+	display: block;
+	color: #FFF0F0;
+	text-align: center;
+	padding: 14px 16px;
+	font-size: 18px;
+	text-decoration: none;
+	border-left: 3px solid black;
+	position: relative;
+}
+
+#kali {
+	border-right: 3px solid black;
+}
+
+/* Animation, changing color and background */
+.topnav a:hover {
+	background-color: #616161;
+	color: black;
+	font-size: 19px;
+}
+
+/* Changing style of main link */
+.topnav a.active {
+	background-color: #000000;
+	color: white;
+}
+
+/* Doesn't let to change the size */
+.topnav a.active:hover {
+	font-size: 18px;
+}
+
+.bg-image {
+	/* Full height */
+	height: 90%;
+
+	/* Styles for all background images */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Sets images */
+.img1 { background-image: url(../img/background-images/pr_1.jpg); }
+.img2 { background-image: url(../img/background-images/pr_2.png); }
+.img3 { background-image: url(../img/background-images/pr_3.jpg); }
+
+.bg-text {
+	background-color: rgb(0, 0, 0); /* Background of text */
+	background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+	color: white;
+	font-weight: bold;
+	font-size: 80px;
+	border: 5px solid white;
+	position: fixed;
+	padding: 10px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	width: 700px;
+	text-align: center;
+}
