@@ -2,56 +2,25 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>#maripbekoff</title>
-	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<title>IT - Wikipedia</title>
+	<link type="text/css" rel="stylesheet" href="styles/style.css">
 	<link rel="icon" href="favicon.ico">
 </head>
 <body>
-	<div class="bgimg">
-		<div class="topleft">
-			<p></p>		
+
+	<header>
+		<div class="topnav">
+			<a class="active" href="index.html">IT</a>
+			<a href="guides.html">Guides</a>
+			<a href="#about">About</a>
+			<a href="https://arnaitours.kz" target="_blank">Sponsors</a>
+			<a id="kali" href="https://kali.org/downloads" target="_blank">Kali Linux</a>
 		</div>
-		<a href="https://vk.com/chingizsck">
-		<div class="middle">
-			<h1>COMING SOON</h1>
-			<hr>
-			<p id="demo">10 mins</p>
-		</div>
-		</a>
-		<div class="bottomleft">
-			<p>#maripbekoff</p>
-		</div>
-	</div>
+	</header>
+	<div class="bg-image img1"></div>
+	<div class="bg-image img2"></div>
+	<div class="bg-image img3"></div>
 
-	<script type="text/javascript">
-// Set the date we're counting down to
-var countDownDate = new Date("Feb 28, 2019 18:00:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get todays date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now an the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000); 
-	</script>
+	<div class="bg-text">IT - WikiPedia!</div>
 </body>
 </html>
