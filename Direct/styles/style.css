@@ -26,19 +26,14 @@ body, html {
 	padding: 14px 16px;
 	font-size: 18px;
 	text-decoration: none;
-	border-left: 3px solid black;
 	position: relative;
-}
-
-#kali {
-	border-right: 3px solid black;
+	font-weight: bold;
 }
 
 /* Animation, changing color and background */
 .topnav a:hover {
-	background-color: #616161;
+	background-color: rgba(0,0,0, 0.1);
 	color: black;
-	font-size: 19px;
 }
 
 /* Changing style of main link */
@@ -49,7 +44,7 @@ body, html {
 
 /* Doesn't let to change the size */
 .topnav a.active:hover {
-	font-size: 18px;
+	background-color: rgba(0,0,0, 0.9);
 }
 
 .bg-image {
@@ -71,10 +66,11 @@ body, html {
 	background-color: rgb(0, 0, 0); /* Background of text */
 	background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
 	color: white;
+	font-family: vintage;
 	font-weight: bold;
 	font-size: 80px;
 	border: 5px solid white;
-	position: fixed;
+	position: absolute;
 	padding: 10px;
 	top: 50%;
 	left: 50%;
