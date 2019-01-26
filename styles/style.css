@@ -3,15 +3,8 @@ body, html {
 	margin: 0;
 }
 
-#myVideo {
-  right: 0;
-	position: absolute;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
-
 .bgimg {
+	background-image: url('../img/background.png');
 	height: 100%;
 	background-position: center;
 	background-size: cover;
@@ -36,7 +29,7 @@ body, html {
 
 .middle {
 	position: absolute;
-	border: 3px solid white;
+	border: 1px solid white;
 	padding-left: 5%;
 	padding-right: 5%;
 	top: 50%;
