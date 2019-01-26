@@ -7,6 +7,11 @@
 	<link rel="icon" href="favicon.ico">
 </head>
 <body>
+	 <!-- The video -->
+	<video autoplay muted loop id="myVideo">
+  	<source src="video/Fire.mp4" type="video/mp4">
+	</video>
+</div> 
 	<div class="bgimg">
 		<div class="topleft">
 			<p></p>		
@@ -24,6 +29,23 @@
 	</div>
 
 	<script type="text/javascript">
+// Get the video
+var video = document.getElementById("myVideo");
+
+// Get the button
+var btn = document.getElementById("myBtn");
+
+// Pause and play the video, and change the button text
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+
 // Set the date we're counting down to
 var countDownDate = new Date("Feb 28, 2019 00:00:00").getTime();
 
