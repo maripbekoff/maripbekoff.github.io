@@ -305,8 +305,8 @@ hr {
 /* Doesn't let to change the size */
 .topnav a.active:hover
 {
-    color: white;
-    background-color: rgba(0,0,0, .9);
+    color: #F3F3F3;
+    background-color: rgba(255,255,255, .05);
 }
 
 .bg-image
