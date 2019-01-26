@@ -7,21 +7,30 @@
 	<link rel="icon" href="favicon.ico">
 </head>
 <body>
-	<div class="bgimg">
-		<div class="topleft">
-			<p></p>		
-		</div>
-		<a href="https://vk.com/chingizsck">
-		<div class="middle">
-			<h1>COMING SOON</h1>
-			<hr>
-			<p id="demo">10 mins</p>
-		</div>
-		</a>
-		<div class="bottomleft">
-			<p>#maripbekoff</p>
+	<div id="particles-js"></div>
+
+	<div class="wrapper">
+		<div class="bgimg">
+			<a href="https://vk.com/chingizsck">
+				<div class="middle">
+					<h1>COMING SOON</h1>
+					<hr>
+					<p id="demo">10 mins</p>
+				</div>
+			</a>
+			<div class="bottomleft">
+				<p>#maripbekoff</p>
+			</div>
 		</div>
 	</div>
+
+
+	<script src="particles.js"></script>
+	<script type="text/javascript">
+		particlesJS.load('particles-js', 'particles.json', function() {
+  		console.log('callback - particles.js config loaded');
+		});
+	</script>
 
 	<script type="text/javascript">
 // Set the date we're counting down to

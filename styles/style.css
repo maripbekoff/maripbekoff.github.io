@@ -1,34 +1,35 @@
 body, html {
-	height: 100%;
+	padding: 0;
 	margin: 0;
 }
 
+.wrapper {
+	margin: 0;
+	padding: 0;
+}
+
+#particles-js {
+	background: #151e28;
+	width: 100%;
+	position: fixed;
+	margin: 0;
+	padding: 0;
+}
+
 .bgimg {
-	background-image: url('../img/background.png');
-	height: 100%;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	position: relative;
 	color: white;
 	font-family: "Courier New", Courier, monospace;
 	font-size: 25px;
 }
 
-.topleft {
-	position: absolute;
-	top: 0;
-	left: 16px;
-}
-
 .bottomleft {
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	left: 16px;
 }
 
 .middle {
-	position: absolute;
+	position: fixed;
 	border: 1px solid white;
 	padding-left: 5%;
 	padding-right: 5%;
@@ -42,13 +43,6 @@ body, html {
 hr {
 	margin: auto;
 	width: 40%;
-}
-
-.topleft p {
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 100px;
-	width: 100px;
 }
 
 .middle:hover {
