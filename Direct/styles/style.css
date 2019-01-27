@@ -15,6 +15,10 @@ html
     box-sizing: border-box;
 }
 
+hr {
+    position: relative;
+}
+
 header
 {
     font-family: 'Courier New', Arial, Vintage, sans-serif;
@@ -36,6 +40,8 @@ header
     overflow: hidden;
 
     background-color: black;
+
+    position: relative;
 }
 
 /* Style for links in the top navigation */
@@ -48,7 +54,7 @@ header
     display: block;
     float: left;
 
-    padding: 14px 16px;
+    padding: 10px 16px;
 
     transition: all .4s ease;
     text-align: center;
@@ -61,6 +67,7 @@ header
 .topnav a:hover
 {
     background-color: rgba(255,255,255, .05);
+    border-bottom: 1px solid red;
 }
 
 /* Changing style of main link */
@@ -75,6 +82,7 @@ header
 {
     color: #f3f3f3;
     background-color: rgba(255,255,255, .05);
+    border-bottom: 1px solid red;
 }
 
 .topnav .icon
