@@ -1,33 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>IT - Wikipedia</title>
-	<link type="text/css" rel="stylesheet" href="styles/style.css">
-	<link rel="icon" href="favicon.ico">
-</head>
-<body>
-	
-	<header>
-		 <span class="glitch" data-text="maripbekoff">maripbekoff</span>
-	</header>
-
-	<hr>
-
-	<nav>
-		<div class="topnav">
-			<a class="active" href="index.html">IT</a>
-			<a href="guides.html">Guides</a>
-			<a href="#about">About</a>
-			<a href="https://arnaitours.kz" target="_blank">Sponsors</a>
-			<a id="kali" href="https://kali.org/downloads" target="_blank">Kali Linux</a>
-		</div>
-	</nav>
-
-	<hr>
-
-	<div class="bg-image img1"></div>
-	<div class="bg-image img2"></div>
-
-</body>
+   <head>
+      <meta charset="UTF-8">
+      <title>Code Union</title>
+      <link type="text/css" rel="stylesheet" href="styles/style.css">
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="styles/glitch.css">
+   </head>
+   <body>
+      <header>
+         <span class="glitch" data-text="#maripbekoff">#maripbekoff</span>
+      </header>
+      <hr>
+      <nav>
+         <div class="topnav" id="myTopnav">
+            <a class="active" href="index.html"><i class="fa fa-home"></i></a>
+            <a href="guides.html">Guides</a>
+            <a href="https://kali.org/downloads" target="_blank">Kali Linux</a>
+            <a href="https://vk.com/chingizsck" target="_blank">Owner</a>
+            <a href="about.html">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+         </div>
+      </nav>
+      <hr>
+      <div class="bg-image img1"></div>
+      <div class="bg-image img2"></div>
+      <script type="text/javascript">
+         function myFunction() {
+         		var x = document.getElementById("myTopnav");
+         		if (x.className === "topnav") {
+           		x.className += " responsive";
+         		} else {
+           		x.className = "topnav";
+         		}
+         }
+      </script>
+   </body>
 </html>
+
