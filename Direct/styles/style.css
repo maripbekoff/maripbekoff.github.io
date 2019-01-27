@@ -15,10 +15,6 @@ html
     box-sizing: border-box;
 }
 
-hr {
-    position: relative;
-}
-
 header
 {
     font-family: 'Courier New', Arial, Vintage, sans-serif;
