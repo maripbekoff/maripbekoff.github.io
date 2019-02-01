@@ -150,7 +150,14 @@ footer {
     text-align: center;
 
     color: white;
+<<<<<<< HEAD
     background-color: black;
+=======
+    font-size: 15px;
+    left: 0;
+    right: 0;
+    opacity: .8;
+>>>>>>> f9fd1f6a6513995097218d90473a17011e61839c
 }
 
 footer .fa {
@@ -159,6 +166,10 @@ footer .fa {
     text-decoration: none;
 
     color: white;
+<<<<<<< HEAD
+=======
+    font-size: 30px;
+>>>>>>> f9fd1f6a6513995097218d90473a17011e61839c
 }
 
 /* Test Views */
