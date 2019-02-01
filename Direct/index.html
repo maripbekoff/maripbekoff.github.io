@@ -1,57 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="description" content="My first web-project, just to get an experience">
-      <meta name="keywords" content="#maripbekoff, Code Union, Github Page">
-      <meta name="author" content="maripbekoff">
-      <title>Code Union</title>
-      <link type="text/css" rel="stylesheet" href="styles/style.css">
-      <link rel="icon" href="favicon.ico">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" type="text/css" href="styles/glitch.css">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-   </head>
-   <body>
-      <header>
-         <span class="glitch" data-text="#maripbekoff">#maripbekoff</span>
-      </header>
-      <hr>
-      <nav>
-         <div class="topnav" id="myTopnav">
-            <a class="active" href="index.html"><i class="fa fa-home"></i></a>
-            <a href="guides.html">Guides</a>
-            <a href="https://kali.org/downloads" target="_blank">Kali Linux</a>
-            <a href="https://vk.com/chingizsck" target="_blank">Owner</a>
-            <a href="about.html">About</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="My first web-project, just to get an experience">
+    <meta name="keywords" content="#maripbekoff, Code Union, Github Page">
+    <meta name="author" content="maripbekoff">
+    <title>Code Union</title>
+    <link type="text/css" rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/glitch.css">
+</head>
+
+<body>
+    <header>
+        <span class="glitch" data-text="#maripbekoff">#maripbekoff</span>
+    </header>
+    <hr>
+    <div class="topnav" id="myTopnav">
+        <a class="active" href="index.html"><i class="fa fa-home"></i></a>
+        <a href="guides.html">Guides</a>
+        <a href="https://kali.org/downloads" target="_blank">Kali Linux</a>
+        <a href="https://vk.com/chingizsck" target="_blank">Owner</a>
+        <a href="about.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Test Views
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="smartphoneView.html">Smart View</a>
+                <a href="laptopView.html">Laptop View</a>
+            </div>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
             </a>
-         </div>
-      </nav>
-      <hr>
-      <div class="bg-image img1"></div>
-      <div class="bg-image img2"></div>
-      <hr style="margin:0;padding:0;">
-      <footer>
-         <a href="https://vk.com/chingizsck"><i class="fa fa-vk"></i></a>
-         <a href="https://github.com/maripbekoff/"><i class="fa fa-github"></i></a>
-         <a href="https://kali.org/downloads"><i class="fa fa-linux"></i></a>
-         <p style="opacity: .7">
+    </div>
+    <hr>
+    <div class="bg-image img1"></div>
+    <div class="bg-image img2"></div>
+    <hr style="margin:0;padding:0;">
+    <footer>
+        <a href="https://vk.com/chingizsck"><i class="fa fa-vk"></i></a>
+        <a href="https://github.com/maripbekoff/"><i class="fa fa-github"></i></a>
+        <a href="https://kali.org/downloads"><i class="fa fa-linux"></i></a>
+        <p style="opacity: .7">
             Powered by <a href="https://vk.com/chingizsck">#maripbekoff</a>
-         </p>
-      </footer>
-      <script type="text/javascript">
-         function myFunction() {
-         		var x = document.getElementById("myTopnav");
-         		if (x.className === "topnav") {
-           		x.className += " responsive";
-         		} else {
-           		x.className = "topnav";
-         		}
-         }
-      </script>
-   </body>
-</html>
+        </p>
+    </footer>
+    <script type="text/javascript">
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    </script>
+</body>
 
+</html>

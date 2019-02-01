@@ -1,7 +1,6 @@
 body,
-html
-{
-    font-family: sans-serif, Arial, Roman;
+html {
+    font-family: 'Courier New', Arial, Roman, sans-serif;
 
     height: 100%;
     margin: 0;
@@ -9,13 +8,12 @@ html
     background: black;
 }
 
-*
-{
+* {
     box-sizing: border-box;
 }
 
-header
-{
+/* Header */
+header {
     font-family: 'Courier New', Arial, Vintage, sans-serif;
     font-size: 100px;
 
@@ -34,10 +32,9 @@ hr {
     padding: 0;
 }
 
+/* Navbar */
 /* Adds a black background */
-.topnav
-{
-    position: relative;
+.topnav {
 
     overflow: hidden;
 
@@ -45,9 +42,8 @@ hr {
 }
 
 /* Style for links in the top navigation */
-.topnav a
-{
-    font-size: 18px;
+.topnav a {
+    font-size: 17px;
 
     position: relative;
 
@@ -64,63 +60,57 @@ hr {
 }
 
 /* Animation, changing color and background */
-.topnav a:hover
-{
+.topnav a:hover {
     border-bottom: 1px solid red;
     background-color: rgba(255, 255, 255, .05);
 }
 
 /* Changing style of main link */
-.active
-{
+.active {
     color: white;
     background-color: black;
 }
 
 /* Doesn't let to change the size */
-.active:hover
-{
+.active:hover {
     color: #f3f3f3;
-    border-bottom: 1px solid red;
     background-color: rgba(255, 255, 255, .05);
 }
 
-.topnav .icon
-{
+.topnav .icon {
     display: none;
     float: right;
 }
 
-@media screen and (max-width: 480px)
-{
-    .topnav a:not(:first-child)
-    {
+/* Mobile version */
+
+@media screen and (max-width: 480px) {
+    .topnav a:not(:first-child) {
         display: none;
     }
 
-    .topnav a.icon
-    {
+    .topnav .dropdown {
+        display: none;
+    }
+
+    .topnav a.icon {
         display: block;
         float: right;
     }
 }
 
-@media screen and (max-width: 480px)
-{
-    .topnav.responsive
-    {
+@media screen and (max-width: 480px) {
+    .topnav.responsive {
         position: relative;
     }
 
-    .topnav.responsive .icon
-    {
+    .topnav.responsive .icon {
         position: absolute;
         top: 0;
         right: 0;
     }
 
-    .topnav.responsive a
-    {
+    .topnav.responsive a {
         display: block;
         float: none;
 
@@ -128,8 +118,7 @@ hr {
     }
 }
 
-.bg-image
-{
+.bg-image {
     /* Full height */
     height: 90%;
 
@@ -140,35 +129,79 @@ hr {
 }
 
 /* Sets images */
-.img1
-{
+.img1 {
     background-image: url(../img/background-images/pr_2.png);
 }
 
-.img2
-{
+.img2 {
     background-image: url(../img/background-images/pr_3.jpg);
 }
 
-.current
-{
-    border-bottom: 1px solid red;
-}
-
+/* Footer */
 footer {
-    background-color: black;
-    height: 20%;
+    font-size: 15px;
+
+    position: relative;
+
     width: 100%;
-    padding: 64px;
+    height: 100px;
+    padding: 25px;
+
     text-align: center;
+
     color: white;
-    font-size: 20px;
-    left: 0;
-    right: 0;
+    background-color: black;
 }
 
 footer .fa {
+    font-size: 30px;
+
     text-decoration: none;
+
     color: white;
-    font-size: 50px;
+}
+
+/* Test Views */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px 16px;
+  background-color: black;
+  transition: 0.3s;
+}
+
+.dropdown .dropbtn:hover {
+    border-bottom: 1px solid red;
+    background-color: rgba(255,255,255, 0.05);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  padding: 10px 16px;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Currnet tab */
+.current {
+    border-bottom: 1px solid red;
 }
