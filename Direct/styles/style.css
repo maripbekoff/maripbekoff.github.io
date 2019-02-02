@@ -15,9 +15,10 @@ html {
 /* Header */
 header {
     font-family: 'Courier New', Arial, Vintage, sans-serif;
-    font-size: 100px;
 
     position: relative;
+
+    font-size: 100px;
 
     height: 120px;
 
@@ -85,9 +86,13 @@ hr {
 }
 
 /* Mobile version */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
     .topnav a:not(:first-child) {
         display: none;
+    }
+
+    header {
+        font-size: 15vw;
     }
 
     .topnav .dropdown {
@@ -100,7 +105,7 @@ hr {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
     .topnav.responsive {
         position: relative;
     }
@@ -151,14 +156,7 @@ footer {
     text-align: center;
 
     color: white;
-<<<<<<< HEAD
     background-color: black;
-=======
-    font-size: 15px;
-    left: 0;
-    right: 0;
-    opacity: .8;
->>>>>>> f9fd1f6a6513995097218d90473a17011e61839c
 }
 
 footer .fa {
@@ -167,48 +165,44 @@ footer .fa {
     text-decoration: none;
 
     color: white;
-<<<<<<< HEAD
-=======
-    font-size: 30px;
->>>>>>> f9fd1f6a6513995097218d90473a17011e61839c
 }
 
 /* Dropdown list */
 .dropdown {
-  float: left;
-  overflow: hidden;
+    float: left;
+    overflow: hidden;
 }
 
 .dropdown .dropbtn {
-  font-size: 17px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 10px 16px;
-  background-color: black;
-  transition: 0.3s;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 16px;
+    background-color: black;
+    transition: 0.3s;
 }
 
 .dropdown .dropbtn:hover {
     border-bottom: 1px solid red;
-    background-color: rgba(255,255,255, 0.05);
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: black;
-  min-width: 160px;
-  z-index: 1;
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    z-index: 1;
 }
 
 .dropdown-content a {
-  float: none;
-  padding: 10px 16px;
-  display: block;
-  text-align: left;
+    float: none;
+    padding: 10px 16px;
+    display: block;
+    text-align: left;
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+    display: block;
 }
