@@ -1,0 +1,138 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2,h3,h4,h5,h6 {
+    color: black;
+    text-transform: uppercase
+}
+
+h2 {
+    font-size: 40px;
+}
+
+p {
+    color: #6f6f6f;
+}
+
+header {
+    padding-bottom: 100px;
+    background: url(../img/first-bg.jpg) no-repeat center top / cover;
+}
+
+.container {
+    width: 930px;
+    margin: 0 auto;
+}
+
+.logo {
+    margin-top: 40px;
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+.menu ul {
+    display: block;
+}
+
+.menu li {
+    float: left;
+    display: block;
+    margin: 45px 20px;
+    font-size: 14px;
+}
+
+.menu a {
+    color: white;
+    text-transform: uppercase;
+}
+
+.heading {
+    text-align: center;
+    clear: both;
+    text-transform: uppercase;
+}
+
+.heading_first {
+    font-size: 40px;
+    padding: 200px 0 20px 0;
+}
+
+.heading h1 {
+    font-size: 75px;
+}
+
+.button {
+    background: #ffe21a;
+    color: #9a9a9a;
+    border-radius: 1px solid black;
+    display: block;
+    width: 200px;
+    padding: 20px 0;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 100px;
+}
+
+.title {
+    padding: 110px 0;
+    text-align: center;
+}
+
+.title p {
+    padding-top: 20px;
+}
+
+.grid {
+    text-align: center;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 100px;
+}
+
+.inner h3 {
+    margin: 20px 0;
+}
+
+#works {
+    background: #f5f5f5;
+    padding-bottom: 50px;
+}
+
+.about {
+    display: grid;
+    text-align: center;
+    grid-gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 80px;
+}
+
+.beginning, .dark_days {
+    text-align: right;
+}
+
+.startup, .triumph {
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 50px;
+}

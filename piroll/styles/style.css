@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: "Montserrat Medium", Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f6f6f6;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: #787878;
+}
+
+header {
+    height: 100px;
+    background: #ffffff;
+    text-transform: uppercase;
+}
+
+.logo {
+    float: left;
+    padding: 40px 100px;
+}
+
+nav {
+    float: right;
+    padding: 35px 100px;
+}
+
+header ul {
+    display: block;
+}
+
+header li {
+    float: left;
+    font-size: 14px;
+    display: block;
+    padding: 0 30px;
+}
+
+header a {
+    color: black;
+    font-weight: 600;
+}
+
+.active {
+    color: #00cac4;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.title {
+    text-align: center;
+    padding: 100px 420px;
+}
+
+.title h1 {
+    font-size: 38px;
+}
+
+.title p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.works {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.items {
+    height: 300px;
+    font-weight: 350px;
+}
+
+.dark_gray {
+    background: #838383;
+}
+
+.gray {
+    background: #dddddd;
+}
+
+.green {
+    background: #00cac4;
+}
+
+.footer {
+    background: #141414;
+}
+
+.wrapper {
+    padding: 100px;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+}
+
+.about h3 {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+footer p, ul, li, a {
+    font-size: 15px;
+    color: #bcbcbc;
+    list-style-type: none;
+}
