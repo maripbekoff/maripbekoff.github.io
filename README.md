@@ -11,3 +11,11 @@ If you want to join to me, i am always waiting for you. :)
 - Added Test views
 - Fixed bugs with font
 
+* 20.06.19
+* Updates
+- Updated a portfolio
+  # https://maripbekoff.github.io/golden
+  # https://maripbekoff.github.io/piroll
+- Removed a previus version of the main page
+  # https://maripbekoff.github.io/Direct
+- Updated a time on main page. Planning to open the site on the first september of this year
