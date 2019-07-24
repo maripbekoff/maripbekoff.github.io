@@ -1,82 +1,114 @@
 * {
-	margin: 0;
-	padding: 0;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:"Consolas", monospace, "Inconsolata", Helvetica, sans-serif;
 }
 
 body {
-	font-family: monospace, 'New Courier', Arial, sans-serif;
-	background: black;
-	color: white;
-	box-sizing: border-box;
+    background: #000;
+    color: #fff;
 }
 
-header h1 {
-	padding: 5vw;
-	text-align: center;
+a {
+    text-decoration: none;
+    color: #fff;
 }
 
-header a {
-	text-decoration: none;
-	color: white;
+#union {
+    color: #ffa030;
+}
+
+.wrapper {
+    display: grid;
+    padding: 5px;
+    grid-gap: 1em;
+    grid-template-areas: 
+    "header"
+    "aside"
+    "article"
+    "footer"
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+    padding: 50px;
 }
 
 nav {
-	min-height: 3em;
-	text-align: center;
+    margin-top: 40px;
+}
+
+.active {
+    border-bottom: 1px solid red;
 }
 
 nav a {
-	padding: 1em;
-	transition: 0.2s ease all;
-	font-weight: bold;
-}
-
-nav .active {
-	border-bottom: 1px solid red;	
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bolder;
+    transition: ease 0.3s all;
 }
 
 nav a:hover {
-	border-bottom: 1px solid red;
+    border-bottom: 1px solid red;
 }
 
-#wrapper {
-	margin: 30px;
-	display: grid;
-	grid-template-columns: 2fr 1fr;
-	grid-gap: 1em;
+article, aside {
+    background: #fff;
+    color: #000;
+    padding: 10px;
+    line-height: 1.5;
 }
 
-#wrapper a {
-	color: red;
+article a, aside a {
+    color: #ff0b11;
+    font-weight: bold;
 }
 
-#about {
-	background: #f4f4f4;
-	color: black;
-	padding: 10px;
-	line-height: 20px;
+article {
+    grid-area: article;
 }
 
-#links {
-	background: #f4f4f4;
-	color: black;
-	padding: 10px;
-	line-height: 20px;
+aside {
+    grid-area: aside;
 }
 
-.ps {
-	border-left: 5px solid gray;
-	padding-left: 5px;
-	margin-top: 50px;
-	font-family: 'New Courier';
+.title {
+    padding: 10px 20px;
+}
+
+.paragraph {
+    padding: 10px 20px 0 20px; 
 }
 
 footer {
-	text-align: center;
+    grid-area: footer;
+    margin: 30px 0;
+    text-align: center;
+    color: #cdcdcd;
 }
 
-@media screen and (max-width: 768px) {
-	#wrapper {
-		grid-template-columns: auto;
-	}
+@media screen and (min-width:600px) {
+    .wrapper {
+        grid-gap: 1em;
+        padding: 0 50px;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+        "header header"
+        "article aside"
+        "footer footer"
+    }
+
+    nav a {
+        font-size: 18px;
+        padding: 10px 26px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    nav a {
+        padding: 10px;
+    }
 }
