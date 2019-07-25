@@ -94,6 +94,13 @@ footer {
     color: #cdcdcd;
 }
 
+@media screen and (max-width:600px) {
+    .services_items {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
 @media screen and (min-width:600px) {
     .wrapper {
         grid-gap: 1em;
