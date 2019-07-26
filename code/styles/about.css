@@ -75,7 +75,7 @@ section {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-img {
+.services img {
     height: 80px;
     width: 80px;
     border-radius: 50%;
@@ -87,6 +87,23 @@ img {
     color: rgb(90, 90, 90);
 }
 
+.portfolio {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.projects {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 100px;
+}
+
+.portfolio img {
+    height: 250px;
+    width: 250px;
+}
+
 footer {
     grid-area: footer;
     margin: 30px 0;
@@ -96,6 +113,13 @@ footer {
 
 @media screen and (max-width:600px) {
     .services_items {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .projects {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
