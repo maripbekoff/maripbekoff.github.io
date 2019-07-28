@@ -15,6 +15,17 @@ a {
     color: #fff;
 }
 
+.items {
+    margin-top: 100px;
+}
+
+.paragraph {
+    background: #e6e6e6;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
 #union {
     color: #ffa030;
 }
@@ -70,7 +81,6 @@ section {
 
 .services_items {
     display: grid;
-    margin-top: 100px;
     grid-gap: 1em;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -88,7 +98,6 @@ section {
 }
 
 .portfolio {
-    margin-top: 150px;
     text-align: center;
 }
 
@@ -96,12 +105,38 @@ section {
     display: grid;
     grid-gap: 2em;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .portfolio img {
     height: 250px;
     width: 250px;
+}
+
+.team {
+    text-align: center;
+}
+
+.team a {
+    color: red;
+}
+
+.chingiz img, .nartai img{
+    margin-top: 20px;
+}
+
+.team_photos {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.team img {
+    height: 250px;
+    width: 250px;
+    padding: 2px;
+    border: 1px double black;
+    border-radius: 50%;
 }
 
 footer {
@@ -123,6 +158,12 @@ footer {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
+    .team_photos {
+        grid-gap: 0;
+    }
+    .nartai_describe {
+        border-top: 1px solid black;
+    }
 }
 
 @media screen and (min-width:600px) {
@@ -134,6 +175,11 @@ footer {
     nav a {
         font-size: 18px;
         padding: 10px 26px;
+    }
+    .team_photos {
+        grid-gap: 3em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 }
 
