@@ -33,7 +33,12 @@ a {
 header {
     grid-area: header;
     text-align: center;
-    padding: 50px;
+    margin: 50px;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 15px;
 }
 
 nav {
@@ -46,7 +51,6 @@ nav {
 
 nav a {
     padding: 10px 15px;
-    font-size: 14px;
     font-weight: bolder;
     transition: ease 0.3s all;
 }
@@ -107,8 +111,8 @@ footer {
     }
 }
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:640px) {
     nav a {
-        padding: 10px;
+        font-size: 4vw;
     }
 }

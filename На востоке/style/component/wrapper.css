@@ -1,0 +1,28 @@
+.wrapper {
+    background-image: url('../../image/shutterstock_125897963.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.button {
+    margin-top: 30px;
+    text-align: center;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    border: 3px solid #F1B501;
+    overflow: visible;
+    color: #F1B501;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 13px;
+    background-color: transparent;
+    transition: all 0.4s ease;
+}
+
+button:hover {
+    background-color: rgba(0,0,0, 0.1);
+}
