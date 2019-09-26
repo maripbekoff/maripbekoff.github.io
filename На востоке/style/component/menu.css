@@ -4,11 +4,16 @@
     background-size: cover;
 }
 
+.menu h1 {
+    text-align: center;
+    padding-top: 70px;
+}
+
 .menu-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5em;
-    padding: 100px 70px;
+    padding: 70px 70px;
     text-align: center;
 }
 
@@ -28,5 +33,19 @@
     padding: 10px;
 }
 
+@media screen and (max-width: 1024px) {
+    .menu-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .menu-item img {
+        height: 150px;
+    }
+}
 
-
+@media screen and (max-width: 490px) {
+    .menu-grid {
+        padding: 70px 30px;
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,45 @@
+ul {
+    list-style-type: none;
+}
+
+.overlay {
+    padding-top: 30px;
+}
+
+.overlay li {
+    margin: 5px;
+}
+
+.overlay {
+    text-align: center;
+    position: fixed;
+    display: none; 
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.overlay h2 {
+    padding: 10px;
+}
+
+.sub-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sub-grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 1024px) {
+    .sub-grid-3 {
+        font-size: 14px;
+    }
+}

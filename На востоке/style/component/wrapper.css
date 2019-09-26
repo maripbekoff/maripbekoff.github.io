@@ -1,5 +1,5 @@
 .wrapper {
-    background-image: url('../../image/shutterstock_125897963.jpg');
+    background-image: url('../../image/cook.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -21,6 +21,7 @@ button {
     font-size: 13px;
     background-color: transparent;
     transition: all 0.4s ease;
+    cursor: pointer;
 }
 
 button:hover {
