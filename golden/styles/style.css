@@ -38,27 +38,17 @@ header {
 
 .logo {
     margin-top: 40px;
-    float: left;
 }
 
 nav {
+    margin: 45px 0;
     float: right;
 }
 
-.menu ul {
-    display: block;
-}
-
-.menu li {
-    float: left;
-    display: block;
-    margin: 45px 20px;
-    font-size: 14px;
-}
-
-.menu a {
+nav a {
     color: white;
     text-transform: uppercase;
+    margin: 0 12px;
 }
 
 .heading {
@@ -73,7 +63,7 @@ nav {
 }
 
 .heading h1 {
-    font-size: 75px;
+    font-size: 3em;
 }
 
 .button {
@@ -135,4 +125,36 @@ nav {
 footer {
     text-align: center;
     margin-bottom: 50px;
+}
+
+@media screen and (max-width: 932px) {
+    .container{
+        width: 80%;
+    }
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .about {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 666px) {
+    .container{
+        width: 70%;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    #works img {
+        width: 250px;
+    }
+
+    nav a {
+        display: none;
+    }
 }
